@@ -1,7 +1,7 @@
 # Database Management Portfolio
 
 **Student:** Erik Sorensen  
-**Course:** Database Security (ISI 325)
+**Course:** Database Design  
 **Platform:** Microsoft SQL Server / T-SQL  
 
 ---
@@ -42,7 +42,26 @@ A fully normalized relational database modeling a healthcare environment with pa
 
 ---
 
-### Project 2 — SQL Assignment 1: Foundational Queries & Data Manipulation
+### Project 2 — Meijer Retail Database Design & SQL Queries
+
+A retail operations database modeling the full lifecycle of a customer transaction for a mid-scale retailer.
+
+**Schema:** Eight tables — `Customer`, `Store`, `Product`, `Category`, `Supplier`, `StoreProduct`, `Purchase`, and `PurchaseDetail` — following Third Normal Form. The schema uses a classic retail star pattern with two bridging tables and enforced referential integrity throughout (500 customers, 25 stores, 100 products, 20 purchases, 41 line items).
+
+**Key Work:**
+- Designed and documented the full ER diagram and schema narrative
+- Verified table population using `UNION ALL` count queries
+- Wrote queries covering multi-table joins, views, `GROUP BY`, `DISTINCT`, `ASC`/`DESC` sorting
+- Demonstrated inner, left outer, and right outer joins
+- Applied five T-SQL functions: `LEN()`, `UPPER()`, `LOWER()`, `GETDATE()`, `ISNULL()`
+- Created a stored procedure (`spu_InsertProviderType`) with parameterized input
+- Wrote manual `CREATE TABLE` with a clustered primary key and a named index
+
+**Files:** `DatabaseDesign_ErikSorensen.pdf`, `database2.pdf`, `database2.sql`
+
+---
+
+### Project 3 — SQL Assignment 1: Foundational Queries & Data Manipulation
 
 Foundational T-SQL work on the Sick DB database covering core query techniques, data manipulation, and built-in functions.
 
@@ -66,30 +85,11 @@ Foundational T-SQL work on the Sick DB database covering core query techniques, 
 - Found the provider with the longest last name using `TOP 1` with `LEN()` and `ORDER BY`
 - Inserted himself (Erik Sorensen, PatientID 26) with two assigned ailments, then displayed them via a three-table join
 
-**Files:** `SqlAssignment.sql`
+**Files:** `SQL1.sql`
 
 ---
 
-### Project 4 — Meijer Retail Database Design & SQL Queries
-
-A retail operations database modeling the full lifecycle of a customer transaction for a mid-scale retailer.
-
-**Schema:** Eight tables — `Customer`, `Store`, `Product`, `Category`, `Supplier`, `StoreProduct`, `Purchase`, and `PurchaseDetail` — following Third Normal Form. The schema uses a classic retail star pattern with two bridging tables and enforced referential integrity throughout (500 customers, 25 stores, 100 products, 20 purchases, 41 line items).
-
-**Key Work:**
-- Designed and documented the full ER diagram and schema narrative
-- Verified table population using `UNION ALL` count queries
-- Wrote queries covering multi-table joins, views, `GROUP BY`, `DISTINCT`, `ASC`/`DESC` sorting
-- Demonstrated inner, left outer, and right outer joins
-- Applied five T-SQL functions: `LEN()`, `UPPER()`, `LOWER()`, `GETDATE()`, `ISNULL()`
-- Created a stored procedure (`spu_InsertProviderType`) with parameterized input
-- Wrote manual `CREATE TABLE` with a clustered primary key and a named index
-
-**Files:** `DatabaseDesign_ErikSorensen.pdf`, `database2.pdf`, `database2.sql`
-
----
-
-### Project 5 — SQL Assignment 2: Queries, Views, Functions & Stored Procedures
+### Project 4 — SQL Assignment 2: Queries, Views, Functions & Stored Procedures
 
 Intermediate T-SQL work on the Sick DB database covering data retrieval, multi-table joins, built-in functions, views, stored procedures, and aggregation.
 
@@ -109,7 +109,7 @@ Intermediate T-SQL work on the Sick DB database covering data retrieval, multi-t
 
 ---
 
-### Project 6 — SQL Assignment 3: DDL, Routines & Error Handling
+### Project 5 — SQL Assignment 3: DDL, Routines & Error Handling
 
 Advanced T-SQL work focused on Data Definition Language, control flow, error handling, and data integrity.
 
@@ -129,7 +129,7 @@ Advanced T-SQL work focused on Data Definition Language, control flow, error han
 
 ---
 
-### Project 7 — SQL Assignment 4: Cross-Database Insurance Rating System
+### Project 6 — SQL Assignment 4: Cross-Database Insurance Rating System
 
 A two-database system that calculates insurance rates based on customer age and gender, with rider surcharge logic and reporting.
 
@@ -146,7 +146,7 @@ A two-database system that calculates insurance rates based on customer age and 
 
 ---
 
-### Project 8 — Database Recovery Plan
+### Project 7 — Database Recovery Plan
 
 A comprehensive disaster recovery policy for an organization with 1,500 employees and $250M in annual revenue running Microsoft SQL Server on-premises.
 
@@ -164,7 +164,7 @@ A comprehensive disaster recovery policy for an organization with 1,500 employee
 
 ---
 
-### Project 9 — Database Security Policy
+### Project 8 — Database Security Policy
 
 A defense-in-depth security policy covering physical, network, host, and database security layers for the same enterprise environment.
 
@@ -194,7 +194,7 @@ database-portfolio/
 │   ├── database2.pdf
 │   └── database2.sql
 ├── sql-assignment-1/
-│   └── SqlAssignment.sql
+│   └── SQL1.sql
 ├── sql-assignment-2/
 │   └── SQL2.pdf
 ├── sql-assignment-3/
@@ -207,3 +207,22 @@ database-portfolio/
 │   └── SecurityPolicy.pdf
 └── README.md
 ```
+
+---
+
+## How to Run
+
+1. Install [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms).
+2. Connect to a local or remote SQL Server instance.
+3. For each project, open the `.sql` file (where provided) or reference the PDF for the full script.
+4. Run schema/table creation scripts before data population scripts.
+5. For SQL Assignment 4, create `RateDB` and `CustomerDB` before executing any functions or procedures.
+
+---
+
+## Contact
+
+**Name:** Erik Sorensen  
+**Email:** your.email@example.com  
+**LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
+**GitHub:** [github.com/yourusername](https://github.com/yourusername)
