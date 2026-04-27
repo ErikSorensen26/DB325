@@ -207,22 +207,3 @@ database-portfolio/
 │   └── SecurityPolicy.pdf
 └── README.md
 ```
-
----
-
-## How to Run
-
-1. Install [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms).
-2. Connect to a local or remote SQL Server instance.
-3. For each project, open the `.sql` file (where provided) or reference the PDF for the full script.
-4. Run schema/table creation scripts before data population scripts.
-5. For SQL Assignment 4, create `RateDB` and `CustomerDB` before executing any functions or procedures.
-
----
-
-## Contact
-
-**Name:** Erik Sorensen  
-**Email:** your.email@example.com  
-**LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-**GitHub:** [github.com/yourusername](https://github.com/yourusername)
